@@ -18,6 +18,8 @@ Usage
 > If you are using mac, use GNU sed after installing with brew install gnu-sed.
 > Replace sed with gsed
 
+.. code-block:: console
+
     $ sed -i 's,^\(load_examples[ ]*=\).*,\1'False',g' airflow/airflow.cfg
     $ export AIRFLOW_HOME=$PWD/airflow
     $ airflow dags unpause neo_daily_ingestion (This will trigger the daily dag and backfill)
