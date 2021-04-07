@@ -23,7 +23,11 @@ Usage
 
 5) The dag will automatically turn on and backfill from the earliest date available from neo service.
 
-6) You can also go to localhost:9090, click the DAG name, neo_ingest and make sure it backfilled for past 7 days.
+6) You can also go to localhost:9090 (admin, admin), click the DAG name, neo_ingest and make sure it backfilled for past 7 days.
+
+> If you leave the two terminals where you have airflow webserver and scheduler, the above said DAG will keep ingesting data everyday.
+
+
 7) The date will be created in /tmp/data/neo_parquet and parquet will be partitioned by created_at. You should see different folders.
 8) Now, you can query the data to know if and when any hazardous objects will be approaching earth, how close they will get, and save the information to a database
 
