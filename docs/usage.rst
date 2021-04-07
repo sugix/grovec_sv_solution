@@ -14,9 +14,14 @@ Usage
 .. code-block:: console
 
     $ make setup_airflow
-    $ sed -i 's,^\(load_examples[ ]*=\).*,\1'True',g' airflow/airflow.cfg
-    $ sed -i 's,^\(dags_are_paused_at_creation[ ]*=\).*,\1'False',g' airflow/airflow.cfg
-    $ make run_airflow_webserver
+
+> If you are using mac, use GNU sed after installing with brew install gnu-sed.
+> Replace sed with gsed
+
+    $ sed -i 's,^\(load_examples[ ]*=\).*,\1'False',g' airflow/airflow.cfg
+    $ export AIRFLOW_HOME=$PWD/airflow
+    $ airflow dags unpause neo_daily_ingestion (This will trigger the daily dag and backfill)
+    $ make run_airflow_webserver (start the web-server)
 
 4) In terminal_2, run following
 
