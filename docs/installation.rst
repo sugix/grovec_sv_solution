@@ -12,7 +12,7 @@ To install GroveC-SV-Solution, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install grovec_sv_solution
+    $ pip install grovec_sv_solution (you do not have to install this package)
 
 This is the preferred method to install GroveC-SV-Solution, as it will always install the most recent stable release.
 
@@ -22,8 +22,18 @@ you through the process.
 .. _pip: https://pip.pypa.io
 .. _Python installation guide: http://docs.python-guide.org/en/latest/starting/installation/
 
+Pre-Req
+-------
 
-From source
+.. code-block:: console
+
+    $ cd grovec_sv_solution
+    $ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+    $ source $(poetry env info --path)/bin/activate
+    $ poetry install --no-root (take a coffee break)
+
+
+From source (You do not need follow this unless you want use the solution as module)
 -----------
 
 The source for GroveC-SV-Solution can be downloaded from the `Github repo`_.
