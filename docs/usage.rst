@@ -11,9 +11,13 @@ Usage
 
 3) In terminal_1, run following
 
+.. code-block:: console
+
     $ make run_airflow_webserver
 
 4) In terminal_2, run following
+
+.. code-block:: console
 
     $ make run_airflow_scheduler
 
@@ -23,12 +27,16 @@ Usage
 7) The date will be created in /tmp/data/neo_parquet and parquet will be partitioned by created_at. You should see different folders.
 8) Now, you can query the data to know if and when any hazardous objects will be approaching earth, how close they will get, and save the information to a database
 
+.. code-block:: console
+
     $ poetry run python grovec_sv_solution/grovec_sv_solution.py
 
 9) The above query the raw parquet partitioned data via DuckDB and also Dask. The duckDB results will be printed to console
 and dask will write the answer to parquet file called neo_hazardous_result.parquet under /tmp/data
 
 10) You can view the contents of the parquet manually via
+
+.. code-block:: console
 
     $ parquet-tools show neo_hazardous_result.parquet
     $ sugiv:created_at=2021-04-01/ $ parquet-tools show part.0.parquet
