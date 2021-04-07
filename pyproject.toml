@@ -1,7 +1,7 @@
 [tool]
 [tool.poetry]
 name = "grovec_sv_solution"
-version = "0.1.20"
+version = "0.1.21"
 homepage = "https://github.com/sugix/grovec_sv_solution"
 description = "Top-level package for GroveC-SV-Solution."
 authors = ["Sugi Venugeethan <sugi205@gmail.com>"]
