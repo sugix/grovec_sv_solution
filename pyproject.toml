@@ -20,11 +20,15 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.6,<4.0"
+python = ">=3.7,<4.0"
 click = "*"
 duckdb = "^0.2.5"
 dask = {version = "*",extras = ["complete"]}
-apache-airflow = "^2.0.1"
+ipykernel = "^5.5.3"
+aiohttp = "^3.7.4"
+requests = "^2.25.1"
+fastparquet = "^0.5.0"
+pyarrow = "^3.0.0"
 
 [tool.poetry.dev-dependencies]
 bumpversion = "*"

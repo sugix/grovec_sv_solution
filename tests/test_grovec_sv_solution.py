@@ -5,7 +5,7 @@
 import pytest
 from click.testing import CliRunner
 
-from grovec_sv_solution import cli
+from grovec_sv_solution import grovec_sv_solution
 
 
 @pytest.fixture
@@ -28,9 +28,9 @@ def test_content(response):
 def test_command_line_interface():
     """Test the CLI."""
     runner = CliRunner()
-    result = runner.invoke(cli.main)
+    result = runner.invoke(grovec_sv_solution.main)
     assert result.exit_code == 0
     assert 'grovec_sv_solution.cli.main' in result.output
-    help_result = runner.invoke(cli.main, ['--help'])
+    help_result = runner.invoke(grovec_sv_solution.main, ['--help'])
     assert help_result.exit_code == 0
     assert '--help  Show this message and exit.' in help_result.output

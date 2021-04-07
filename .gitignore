@@ -47,6 +47,8 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 .idea/*
+dask-worker-space/
+airflow/logs/
 
 # Translations
 *.mo
