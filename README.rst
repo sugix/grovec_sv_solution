@@ -30,4 +30,5 @@ Solution for GroveCo TakeHome Test By SugiV
 Features
 --------
 
-* TODO
+* Airflow pipeline to daily ingest of neo data.
+* Airflow pipeline will be turned on automatically when you start Airflow
