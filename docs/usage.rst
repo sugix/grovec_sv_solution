@@ -13,6 +13,9 @@ Usage
 
 .. code-block:: console
 
+    $ make setup_airflow
+    $ sed -i 's,^\(load_examples[ ]*=\).*,\1'True',g' airflow/airflow.cfg
+    $ sed -i 's,^\(dags_are_paused_at_creation[ ]*=\).*,\1'False',g' airflow/airflow.cfg
     $ make run_airflow_webserver
 
 4) In terminal_2, run following

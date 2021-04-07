@@ -3,6 +3,7 @@
 setup_airflow:
 
 	pip install "apache-airflow==2.0.1" --constraint https://raw.githubusercontent.com/apache/airflow/constraints-2.0.1/constraints-3.7.txt
+	export AIRFLOW__CORE__LOAD_EXAMPLES=False
 	AIRFLOW_HOME=$$PWD/airflow airflow db init
 	AIRFLOW_HOME=$$PWD/airflow airflow users create \
     --username admin \

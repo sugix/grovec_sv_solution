@@ -29,8 +29,8 @@ Pre-Req
 
     $ cd grovec_sv_solution
     $ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
-    $ source $(poetry env info --path)/bin/activate
     $ poetry install --no-root (take a coffee break)
+    $ source $(poetry env info --path)/bin/activate
 
 
 From source (You do not need follow this unless you want use the solution as module)
