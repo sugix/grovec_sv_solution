@@ -15,8 +15,7 @@ Usage
 
     $ make setup_airflow
 
-> If you are using mac, use GNU sed after installing with brew install gnu-sed.
-> Replace sed with gsed
+- If you are using mac, use GNU sed after installing with brew install gnu-sed. Replace sed with gsed
 
 .. code-block:: console
 
